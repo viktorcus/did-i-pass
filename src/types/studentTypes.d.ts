@@ -1,3 +1,11 @@
+/*
+ *  StudentTypes.d.ts
+ *  Project: Did-I-Pass
+ *
+ *  Author: Carolyn Seglem
+ *  Created on: Feb 4, 2023
+ */
+
 type CourseGrade = {
     name: string,
     weight: number,
@@ -6,7 +14,7 @@ type CourseGrade = {
 
 type CourseGrades = {
     assignmentWeights: Array<CourseGrade>,
-    finalExamWeight: { weight: number },
+    finalExamWeight: number,
 };
 
 type Student = {
@@ -34,4 +42,10 @@ type FinalExamScores = {
     neededForB: number,
     neededForC: number,
     neededForD: number,
+};
+
+type StudentNameParam = {
+    studentName: string,
 }
+
+type StudentManager = Record<string, Student>;
