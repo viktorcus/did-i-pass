@@ -44,8 +44,13 @@ type FinalExamScores = {
     neededForD: number,
 };
 
-type StudentNameParam = {
+type StudentNameParams = {
     studentName: string,
+}
+
+type GradeUpdateParams = {
+    studentName: string,
+    assignmentName: string
 }
 
 type StudentManager = Record<string, Student>;
